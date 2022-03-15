@@ -1,15 +1,21 @@
 import "./App.css";
+import Dictionary from "./Dictionary";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="" className="App-logo" alt="logo" />
-        <p>
-          This will be a dictionary app <code>src/App.js</code> and save to
-          reload.
-        </p>
-      </header>
+      <div className="container">
+        <header className="App-header">
+          
+        </header>
+        <main>
+          <Dictionary />
+        </main>
+        <footer className="text-center">
+          {" "}
+          open source code from sheCodes coded by Azenath
+        </footer>
+      </div>
     </div>
   );
 }
