@@ -27,10 +27,20 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="Search" autoFocus={true} onChange={handleKeywordChange} />
-      </form>
-      <Results results={results} />
+      <section>
+        <form onSubmit={search}>
+          <input
+            type="Search"
+            autoFocus={true}
+            onChange={handleKeywordChange}
+          />
+        </form>
+        <small className="hint">
+          <em>i.e. coding, inspired, gratification, culinary </em>{" "}
+        </small>
+        </section>
+      <section><Results results={results} /></section>
+
     </div>
   );
 }

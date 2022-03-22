@@ -1,4 +1,7 @@
 .App {
+  padding: 60px 0 100px;
+  max-width: 900px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -6,10 +9,26 @@
   margin: 30 px 0;
 }
 
-.App-logo {
-  max-width: 200 px;
+.App .logo {
+  max-height: min-content;
   display: block;
   margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 35px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+section {
+  box-shadow: 2px 1px 15px 10px #1e565d;
+  border-radius: 20px;
+  margin: 15px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
 }
 
 .App-footer {

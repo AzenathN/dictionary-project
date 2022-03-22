@@ -1,4 +1,5 @@
 import "./App.css";
+import language from "./language.png";
 import Dictionary from "./Dictionary";
 
 function App() {
@@ -6,7 +7,13 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          
+          <div className="images">
+            <img
+              src={language}
+              className="logo"
+              alt="magnifying glass over a dictionary"
+            />
+          </div>
         </header>
         <main>
           <Dictionary />
