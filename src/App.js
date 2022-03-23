@@ -13,8 +13,12 @@ function App() {
               className="logo"
               alt="magnifying glass over a dictionary"
             />
+
           </div>
         </header>
+        <h1>
+              <span>Dictionary</span>
+            </h1>
         <main>
           <Dictionary />
         </main>

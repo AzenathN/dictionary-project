@@ -39,7 +39,7 @@ export default function Dictionary() {
           <em>i.e. coding, inspired, gratification, culinary </em>{" "}
         </small>
         </section>
-      <section><Results results={results} /></section>
+      <section><article><Results results={results} /></article></section>
 
     </div>
   );

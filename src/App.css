@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
 .App {
+  font-family: "Ubuntu", sans-serif;
   padding: 60px 0 100px;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+
 }
 
 .App-header {
