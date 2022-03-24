@@ -4,12 +4,10 @@
   padding: 60px 0 100px;
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
 }
 
 h1 {
   font-size: 50px;
-
 }
 
 .App-header {
@@ -28,6 +26,7 @@ img {
   height: auto;
   border-radius: 35px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
 }
 
 section {
@@ -36,8 +35,9 @@ section {
   margin: 15px;
   background-color: rgb(255, 255, 255);
   padding: 10px;
-}
 
-.App-footer {
+}
+h1,
+footer {
   text-align: center;
 }
