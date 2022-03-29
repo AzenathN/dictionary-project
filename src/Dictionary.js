@@ -3,9 +3,10 @@ import axios from "axios";
 import "./Dictionary.css";
 import Results from "./Results";
 
-export default function Dictionary() {
+export default function Dictionary(props) {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     //console.log(response.data[0]);
@@ -13,34 +14,47 @@ export default function Dictionary() {
     setResults(response.data[0]);
   }
 
-  function search(event) {
-    event.preventDefault();
-
+  function search() {
     // documentation : https://api.dictionaryapi.dev/
-    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    let apiURL = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiURL).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
 
-  return (
-    <div className="Dictionary">
-      <section>
-        <form onSubmit={search}>
-          <input
-            type="Search"
-            autoFocus={true}
-            onChange={handleKeywordChange}
-          />
-        </form>
-        <small className="hint">
-          <em>i.e. coding, inspired, gratification, culinary </em>{" "}
-        </small>
-        </section>
-      <section><article><Results results={results} /></article></section>
+  function load(){
+    setLoaded(true);
+    search();
+  }
 
-    </div>
-  );
+  if (loaded) {
+    return (
+      <div className="Dictionary">
+        <section>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="Search"
+              autoFocus={true}
+              onChange={handleKeywordChange}
+            />
+          </form>
+          <small className="hint">
+            <em>i.e. coding, inspired, gratification, culinary </em>{" "}
+          </small>
+        </section>
+
+        <Results results={results} />
+      </div>
+    );
+  } else {
+    load();
+    return "Loading";
+  }
 }
