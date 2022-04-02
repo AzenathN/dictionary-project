@@ -4,7 +4,7 @@ import "./Dictionary.css";
 import Results from "./Results";
 
 export default function Dictionary(props) {
-  let [keyword, setKeyword] = useState("");
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
 
@@ -37,12 +37,15 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
+
         <section>
+          <h1>Word Inquiry</h1>
           <form onSubmit={handleSubmit}>
             <input
               type="Search"
               autoFocus={true}
               onChange={handleKeywordChange}
+              defaultValue={props.defaultKeyword}
             />
           </form>
           <small className="hint">
