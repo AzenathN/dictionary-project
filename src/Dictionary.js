@@ -29,7 +29,7 @@ export default function Dictionary(props) {
     setKeyword(event.target.value);
   }
 
-  function load(){
+  function load() {
     setLoaded(true);
     search();
   }
@@ -37,7 +37,6 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
-
         <section>
           <h1>Word Inquiry</h1>
           <form onSubmit={handleSubmit}>
@@ -45,7 +44,7 @@ export default function Dictionary(props) {
               type="Search"
               autoFocus={true}
               onChange={handleKeywordChange}
-              defaultValue={props.defaultKeyword}
+              placeholder={props.defaultKeyword}
             />
           </form>
           <small className="hint">
