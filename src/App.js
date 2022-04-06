@@ -1,6 +1,8 @@
 import "./App.css";
 import language from "./language.png";
 import Dictionary from "./Dictionary";
+import'bootstrap/dist/css/bootstrap.css';
+
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
           <span>Dictionary</span>
         </h1>
         <main>
-          <Dictionary defaultKeyword="kerfuffle" />
+          <Dictionary defaultKeyword="rain" />
         </main>
         <footer className="text-center">
           {" "}
