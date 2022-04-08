@@ -1,8 +1,7 @@
 import "./App.css";
 import language from "./language.png";
 import Dictionary from "./Dictionary";
-import'bootstrap/dist/css/bootstrap.css';
-
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
@@ -25,7 +24,22 @@ function App() {
         </main>
         <footer className="text-center">
           {" "}
-          open source code from sheCodes coded by Azenath
+          <a
+            href="https://www.shecodes.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open source code from sheCodes{" "}
+          </a>
+          and was{" "}
+          <a
+            href="https://github.com/AzenathN"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            coded by Azenath
+          </a>
         </footer>
       </div>
     </div>
