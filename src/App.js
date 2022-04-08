@@ -40,6 +40,11 @@ function App() {
             {" "}
             coded by Azenath
           </a>
+          and hosted by{" "}
+          <a href="https://netlify.com" target="_blank" rel="noreferrer">
+            {" "}
+            Netlify
+          </a>
         </footer>
       </div>
     </div>
