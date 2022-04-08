@@ -31,7 +31,7 @@ function App() {
           >
             open source code from sheCodes{" "}
           </a>
-          and was{" "}
+          and{" "}
           <a
             href="https://github.com/AzenathN"
             target="_blank"
