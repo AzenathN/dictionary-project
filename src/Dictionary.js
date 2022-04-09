@@ -54,7 +54,7 @@ export default function Dictionary(props) {
           <h1>Word Inquiry</h1>
           <form onSubmit={handleSubmit}>
             <div className="row">
-              <div className="col-9">
+              <div className="col-sm-9">
                 <input
                   type="Search"
                   autoFocus={true}
@@ -63,7 +63,7 @@ export default function Dictionary(props) {
                   className="form-control search-input"
                 />
               </div>
-              <div className="col-3">
+              <div className="col-sm-3">
                 <button type="submit" value="Search" className="form-btn">
                   Submit
                 </button>
