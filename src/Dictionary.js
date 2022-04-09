@@ -63,7 +63,7 @@ export default function Dictionary(props) {
                   className="form-control search-input"
                 />
               </div>
-              <div className="col-sm-3">
+              <div className="col-sm-3 justify-content end">
                 <button type="submit" value="Search" className="form-btn">
                   Submit
                 </button>
