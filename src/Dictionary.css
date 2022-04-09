@@ -1,4 +1,4 @@
-.Dictionary h1{
+.Dictionary h1 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -10,21 +10,30 @@
   margin: 15px 0;
   background-color: rgb(255, 255, 255);
   padding: 30px;
-
 }
 
-.Dictionary input{
-  width: 100%;
+.search-input {
   border-radius: 6px;
   padding: 6px 10px;
   color: black;
   border: 5px solid #ddd;
-  
 }
 
-.Dictionary .hint {
+.Dictionary .form-btn {
+  background: rgb(8, 56, 95);
+  color: white;
+
+  cursor: pointer;
+  transition: 1ms ease-in-out;
+  border-radius: 16px;
+
+  font-size: 18px;
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.Dictionary .Dictionary .hint {
   font-size: 11px;
   margin-top: 5px;
-
-
 }
